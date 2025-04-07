@@ -2,6 +2,13 @@
 
 Applies nsg rules from csv file in order to simply networking rules. Terraform is attrocious at this though you can write your own transform and use terraform to store the state. This seems a lot better.
 
+## .env
+
+```
+RESOURCE_GROUP=my-resource-group
+NSG_NAME=my-vnet-subnet1-nsg
+```
+
 ## Rules fields
 
 name,priority,direction,access,protocol,source_prefixes,source_ports,destination_prefixes,destination_ports
